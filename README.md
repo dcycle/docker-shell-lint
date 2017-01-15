@@ -8,7 +8,8 @@ Run check on certain scripts:
 
 Run check on all scripts:
 
-    find . -name "*.sh" | xargs docker run -v $(pwd):/code dcycle/shell-lint
+    find . -name "*.sh" -print0 | \
+      xargs -0 docker run -v "$(pwd)":/code dcycle/shell-lint
 
 Get help like this:
 
