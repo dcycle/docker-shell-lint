@@ -1,9 +1,14 @@
 Lint shell scripts.
+-----
 
-For example:
+Run check on certain scripts:
 
-    docker run -v $(pwd):/code dcycle/shell-lint /code/my-shell-script.sh
-    docker run -v $(pwd):/code dcycle/shell-lint /code/another-shell-script.sh
+    docker run -v $(pwd):/code dcycle/shell-lint ./my-shell-script.sh
+    docker run -v $(pwd):/code dcycle/shell-lint ./another-shell-script.sh
+
+Run check on all scripts:
+
+    find . -name "*.sh" | xargs docker run -v $(pwd):/code dcycle/shell-lint
 
 Get help like this:
 
