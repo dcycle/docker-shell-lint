@@ -3,8 +3,8 @@ Lint shell scripts.
 
 Run check on certain scripts:
 
-    docker run -v $(pwd):/code dcycle/shell-lint ./my-shell-script.sh
-    docker run -v $(pwd):/code dcycle/shell-lint ./another-shell-script.sh
+    docker run -v "$(pwd)":/code dcycle/shell-lint ./my-shell-script.sh
+    docker run -v "$(pwd)":/code dcycle/shell-lint ./another-shell-script.sh
 
 Run check on all scripts:
 
@@ -13,7 +13,7 @@ Run check on all scripts:
 
 Get help like this:
 
-    docker run -v $(pwd):/code dcycle/shell-lint
+    docker run -v "$(pwd)":/code dcycle/shell-lint
 
 Resources
 -----
