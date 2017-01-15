@@ -12,4 +12,4 @@ Get help like this:
 Resources
 -----
 
- * [This image on Docker.io](https://hub.docker.com/r/dcycle/php-lint/)
+ * [This image on Docker.io](https://hub.docker.com/r/dcycle/shell-lint/)
