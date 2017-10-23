@@ -15,6 +15,11 @@ Get help like this:
 
     docker run -v "$(pwd)":/code dcycle/shell-lint
 
+Ignore rules like this:
+
+    # shellcheck disable=SC2016
+    echo 'I have $1 in my pocket.'
+
 Resources
 -----
 
