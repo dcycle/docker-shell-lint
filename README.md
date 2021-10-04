@@ -1,4 +1,4 @@
-Lint shell scripts.
+Lint shell scripts using [shellcheck](https://github.com/koalaman/shellcheck).
 -----
 
 Run check on certain scripts:
