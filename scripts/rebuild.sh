@@ -39,7 +39,7 @@ docker login -u"$DOCKERHUBUSER" -p"$DOCKERHUBPASS"
 # Start by getting the latest version of the base images
 docker pull alpine
 
-docker buildx build -f="Dockerfile2" -t dcycle/"$PROJECT":"$VERSION" --platform linux/amd64,linux/arm64/v8 --push .
-docker buildx build -f="Dockerfile2" -t dcycle/"$PROJECT":"$MAJORVERSION" --platform linux/amd64,linux/arm64/v8 --push .
-docker buildx build -f="Dockerfile2" -t dcycle/"$PROJECT":"$MAJORVERSION".$DATE --platform linux/amd64,linux/arm64/v8 --push .
-docker buildx build -f="Dockerfile2" -t dcycle/"$PROJECT":"$VERSION".$DATE --platform linux/amd64,linux/arm64/v8 --push .
+docker buildx build -f="Dockerfile" -t dcycle/"$PROJECT":"$VERSION" --platform linux/amd64,linux/arm64/v8 --push .
+docker buildx build -f="Dockerfile" -t dcycle/"$PROJECT":"$MAJORVERSION" --platform linux/amd64,linux/arm64/v8 --push .
+docker buildx build -f="Dockerfile" -t dcycle/"$PROJECT":"$MAJORVERSION".$DATE --platform linux/amd64,linux/arm64/v8 --push .
+docker buildx build -f="Dockerfile" -t dcycle/"$PROJECT":"$VERSION".$DATE --platform linux/amd64,linux/arm64/v8 --push .
