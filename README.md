@@ -1,3 +1,6 @@
+[![GitHub Actions](https://github.com/dcycle/docker-jenkins/actions/workflows/config.yml/badge.svg)](../../actions/workflows/config.yml)
+
+
 Lint shell scripts using [shellcheck](https://github.com/koalaman/shellcheck).
 -----
 
